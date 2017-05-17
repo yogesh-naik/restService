@@ -1,0 +1,12 @@
+{
+  "name": "rest-api",
+  "main": "server.js",
+  "dependencies": {
+    "express": "latest",
+    "mongoose": "latest",
+    "node-restful": "latest"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.1"
+  }
+}

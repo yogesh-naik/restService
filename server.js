@@ -23,7 +23,10 @@ var Products = restful.model('products', ProductSchema);
 Products.methods(['get', 'put', 'post', 'delete']);
 Products.register(app, '/topics');
 
-app.listen(3000);
-console.log('Server is running at port 3000');
+//app.listen(3000);
+app.set('port', (process.env.PORT || 5000));
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
 
 

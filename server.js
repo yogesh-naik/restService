@@ -24,11 +24,11 @@ app.use(bodyParser.json());
 // Products.register(app, '/topics');
 
 app.get("/api/contacts", function(req, res) {
-    res.status(200).json({"id":2});
+    res.status(200).json({"id":"yogesh"});
 });
 
 //app.listen(3000);
-app.set('port', (process.env.PORT || 8080));
+app.set('port', 3000);
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));

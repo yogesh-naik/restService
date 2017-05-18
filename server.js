@@ -4,7 +4,7 @@ var express = require('express'),
 
 var app = express();
 //app.configure(function(){
-//var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({
     extended: true
 }));

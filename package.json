@@ -2,7 +2,7 @@
   "name": "rest-api",
   "main": "server.js",
   "scripts":{
-    "start": "node server.js"
+    "start": "node restService/server.js"
   },
   "dependencies": {
     "express": "latest",
